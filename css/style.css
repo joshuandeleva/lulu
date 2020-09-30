@@ -1,0 +1,363 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	scroll-behavior: smooth;
+}
+a {
+	color: #ffffff;
+}
+.nav-starts {
+	padding: 10px 10px;
+	color: white;
+	background-color: rgba(19, 24, 34);
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+.header-left {
+	display: flex;
+	align-items: center;
+}
+.header-right {
+	align-items: center;
+}
+.nav-items {
+	display: flex;
+}
+.nav-items > li {
+	list-style: none;
+	padding: 18px 18px;
+	align-items: center;
+	margin-top: 10px;
+}
+.nav-items > li > a {
+	list-style: none;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 13px;
+}
+.logo > img {
+	width: 100%;
+	object-fit: contain;
+	height: 50px;
+}
+.search-input > input {
+	border: 0;
+	background: none;
+}
+.search-input > input {
+	outline-width: 0;
+	border: none;
+}
+.search-input > ::placeholder {
+	color: white;
+}
+.search-input {
+	margin-left: 8px;
+}
+.nav-items li:last-child {
+	background-color: white;
+	border-radius: 5px;
+	padding: 18px 40px;
+	margin: 10px 0 !important;
+	align-items: center;
+	justify-items: center;
+}
+
+.nav-itemButton > a {
+	color: #c8242f !important;
+	padding: 20px 0 !important;
+}
+.nav-items li:last-child:hover {
+	background-color: rgb(200, 36, 47);
+	color: white;
+}
+.nav-items li a:last-child:hover {
+	color: white !important;
+}
+.menu-btn {
+	cursor: pointer;
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	z-index: 2;
+	display: none;
+	color: white !important;
+}
+.search-input > li {
+	display: none;
+}
+/*======
+Text Area 
+========*/
+
+section {
+	background-color: #131822;
+	background-image: linear-gradient(180deg, #131822 40%, #b82e1f 104%);
+	height: 800px;
+}
+.text {
+	text-align: center;
+	padding-top: 100px;
+	color: #ffffff;
+}
+.icons {
+	margin-top: 60px;
+}
+.icons i {
+	font-size: 20px;
+	padding: 0px 20px;
+	cursor: pointer;
+	color: rgba(166, 152, 156);
+}
+.icons .active {
+	color: #ffffff;
+}
+.icons i span {
+	padding-left: 3px;
+}
+
+.advocates-form {
+	margin: 40px 0;
+	padding: 30px 20px;
+	display: flex;
+	border-radius: 5px;
+	background-color: white;
+}
+.input-class {
+	padding: 0 18px;
+}
+.inp {
+	border: none;
+	border-bottom: 1px solid #1890ff;
+	padding: 15px 10px;
+	outline: none;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+	transition: text-indent 0.4s 0.4s ease;
+	text-indent: -100%;
+	opacity: 1;
+}
+#search-button {
+	background-color: #c8242f;
+	flex: 1;
+	border: none !important;
+	padding: 10px 10px;
+	color: white;
+	border-radius: 5px;
+}
+.law-firms {
+	margin: 40px 0;
+	padding: 30px 20px;
+	display: flex;
+	border-radius: 5px;
+	background-color: white;
+	display: none;
+}
+.lawcourts-form {
+	margin: 40px 0;
+	padding: 30px 20px;
+	display: flex;
+	border-radius: 5px;
+	background-color: white;
+	width: 100%;
+	display: none;
+	height: auto;
+}
+.lawcourts-form > search__button {
+	padding: 30px 10px !important;
+}
+.lawschools-form {
+	margin: 40px 0;
+	padding: 30px 20px;
+	display: flex;
+	border-radius: 5px;
+	background-color: white;
+	width: 100%;
+	height: auto;
+	display: none;
+}
+
+.disclaimer {
+	text-align: center;
+	color: #ffffff;
+	transform: translateY(-20px);
+}
+
+/*=======
+Element 
+Section
+==========*/
+.element {
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+.element h1,
+.element h6 {
+	text-align: center;
+}
+.items {
+	margin-top: 30px;
+	overflow-x: hidden;
+}
+.item-1 {
+	width: 500px;
+	height: 300px;
+	background: #131822;
+}
+.item-1 .content p i,
+.item-2 .content p i {
+	color: #ffffff;
+	font-size: 90px;
+	padding-left: 13rem;
+	padding-top: 5rem;
+}
+.item-1 .content p,
+.item-2 .content p {
+	color: #ffffff;
+}
+.item-1 .content .content-text,
+.item-2 .content .content-text {
+	text-align: center;
+}
+
+.item-2 {
+	width: 500px;
+	height: 300px;
+	background: url(/images/IMG-20200930-WA0031.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: cover;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 2px;
+}
+.col-4 {
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 250px;
+	margin-bottom: 50px;
+	cursor: pointer;
+}
+.item-3,
+.item-4,
+.item-5,
+.item-6,
+.item-7,
+.item-8,
+.item-9,
+.item-10,
+.item-11,
+.item-12,
+.item-13 {
+	height: 350px;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+	justify-content: center;
+	border-radius: 10px;
+}
+.item-3 {
+	background: url(/images/IMG-20200930-WA0024.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: cover;
+}
+.item-4,
+.item-5 {
+	background: #000000;
+}
+
+.item-6 {
+	background: url(/images/IMG-20200930-WA0034.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: cover;
+}
+.item-7 {
+	background: #000000;
+}
+.item-8 {
+	background: #000000;
+}
+.item-9 {
+	background: #000000;
+}
+.item-10 {
+	background: #000000;
+}
+.item-11 {
+	background: #000000;
+}
+.item-12 {
+	background: #000000;
+}
+.item-13 {
+	background: #000000;
+}
+.item-13 {
+	background: #000000;
+}
+.item-3 .content,
+.item-4 .content,
+.item-5 .content,
+.item-6 .content,
+.item-7 .content,
+.item-8 .content,
+.item-9 .content,
+.item-10 .content,
+.item-11 .content,
+.item-12 .content,
+.item-13 .content {
+	color: #ffffff;
+	text-align: center;
+	padding-top: 100px;
+	font-size: 30px;
+}
+.item-3 .content i,
+.item-4 .content i,
+.item-5 .content i,
+.item-6 .content i,
+.item-7 .content i,
+.item-8 .content i,
+.item-9 .content i,
+.item-10 .content i,
+.item-11 .content i,
+.item-12 .content i,
+.item-13 .content i {
+	font-size: 90px;
+}
+/*=======
+Professional
+=========*/
+.professionals {
+	padding: 15px 0;
+	background-color: #f2f2f2;
+}
+.professional__content {
+	text-align: center;
+	align-items: center;
+	width: 100%;
+}
+.professional__content > button {
+	background-color: red;
+	color: white;
+	padding: 10px 30px;
+	border: 0;
+	margin-top: 13px;
+}
+.footer__content {
+	text-align: center;
+	align-items: center;
+	width: 100%;
+	padding: 20px 0;
+}
+.socila__media span {
+	background-color: #f2f2f2;
+	color: inherit;
+	padding: 10px 10px;
+	border-radius: 50%;
+	opacity: 0.9;
+}

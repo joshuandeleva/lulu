@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!------------------Links Css------->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css//style.css">
+  <link rel="stylesheet" href="css//responsive.css">
+  <link rel="stylesheet" href="fontawesome-free-5.0.1/css/fontawesome-all.css" />
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <title>Lulu || Home </title>
+</head>
+
+<body>
+  <!-----------Header-->
+  <script type="text/javascript">
+    document
+      .querySelector(".menu-btn")
+      .addEventListener("click", () =>
+        document
+          .querySelector(".nav-items")
+          .classList.toggle("show")
+      );
+  </script>
+  <div class="menu-btn">
+    <i class="fa fa-bars fa-2x"></i>
+  </div>
+  <div class="nav-starts">
+    <div class="header-left">
+      <div class="logo">
+        <img src="https://mylaw.co.ke/wp-content/uploads/2020/08/mylaw.co_.ke_logo.png" alt="" />
+      </div>
+      <div class="search-input">
+        <fa class="fa fa-search"></fa>
+        <input type="text" placeholder="what are you looking for" />
+        <li>
+          <fa class="fa fa-user"></fa>
+          <a href=""></a>
+        </li>
+      </div>
+    </div>
+    <div class="header-right">
+      <ul class="nav-items">
+        <li><a href="">Home</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Listing</a></li>
+        <li><a href="">Media center</a></li>
+        <li><a href="">Contact us</a></li>
+        <li>
+          <fa class="fa fa-user"></fa>
+          <a href="">SignIn or Register</a>
+        </li>
+        <li class="nav-itemButton">
+          <fa class="fal fa-map-marker-check"></fa>
+          <a href="">Get Listed</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <section class="field">
+    <div class="container">
+      <div class="text">
+        <h1>Kenya's Leading Legal Resource Centre</h1>
+        <h4>Find Advocates, Law firms and Legal services in Kenya</h2>
+      </div>
+
+    </div>
+    <div class="container icons">
+      <div class="icons">
+        <i class="fab fa-black-tie active" onclick="advocate()">
+          <span>Advocates</span>
+        </i>
+        <i class="fas fa-briefcase" onclick="firms()">
+          <span>Law Firms</span>
+        </i>
+        </a>
+        <i class="fas fa-gavel" onclick="court()">
+          <span>Law Courts</span>
+        </i>
+        <i class="fas fa-school" onclick="school()">
+          <span>Law School</span>
+        </i>
+      </div>
+    </div>
+    <div class="container">
+      <div id="advocates" class="advocates-form">
+        <div class="input-class">
+          <input class="inp" placeholder="Advocates Name" />
+        </div>
+        <div class="input-class">
+          <input class="inp" placeholder="Search by County" />
+          <fa class="fa fa-chevron-down"></fa>
+        </div>
+        <div class="input-class">
+          <input class="inp" placeholder="Practice area" />
+          <fa class="fa fa-chevron-down"></fa>
+        </div>
+
+        <button id="search-button" class="fa fa-search">
+          Search
+        </button>
+      </div>
+
+
+      <div id="law-firms" class="law-firms">
+        <div class="input-class">
+          <input class="inp" placeholder="LawfirmName" />
+        </div>
+        <div class="input-class">
+          <input class="inp" placeholder="Search by County" />
+          <fa class="fa fa-chevron-down"></fa>
+        </div>
+        <div class="input-class">
+          <input class="inp" placeholder="town" />
+          <fa class="fa fa-chevron-down"></fa>
+        </div>
+
+        <button id="search-button" class="fa fa-search">
+          Search
+        </button>
+      </div>
+      <div class="lawcourts-form" id="lawcourts-form">
+        <button id="search-button" class="fa fa-search">
+          Search
+        </button>
+      </div>
+      <div class="lawschools-form" id="lawschools-form">
+        <div class="input-class">
+          <input class="inp" placeholder="School name" />
+        </div>
+
+        <button id="search-button" class="fa fa-search">
+          Search
+        </button>
+      </div>
+      <p class="disclaimer">Disclaimer! To confirm if the practicing certificate of an advocate is current,
+        please visit the website of the Law Society of Kenya, www.lsk.or.ke</p>
+
+    </div>
+  </section>
+  <main>
+    <div class="element container">
+      <h1>Discover Law in Kenya</h1>
+      <h6>Filter by category</h3>
+        <div class="items">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 py-3">
+              <div class="item-1">
+                <div class="content">
+                  <p><i class="fab fa-black-tie  active"></i></p>
+                  <p class="content-text">Advocate</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12  py-3">
+              <div class="item-2">
+                <div class="content">
+                  <p><i class="fas fa-briefcase"></i></p>
+                  <p class="content-text">Law Firms</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row py-3 others">
+            <div class="col-lg-3 col-sm-12 py-3 ">
+              <div class="item-3">
+                <div class="content">
+                  <p><i class="fas fa-university"></i></p>
+                  <p class="content-text">Law Courts</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12  py-3">
+              <div class="item-4">
+                <div class="content">
+                  <p><i class="fas fa-gavel"></i></p>
+                  <p class="content-text">Judges</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12  py-3">
+              <div class="item-5">
+                <div class="content">
+                  <p><i class="fas fa-balance-scale"></i></p>
+                  <p class="content-text">Magistrate</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12  py-3">
+              <div class="item-6">
+                <div class="content">
+                  <p> <i class="fas fa-school"></i></p>
+                  <p class="content-text">Law School</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12  py-3">
+              <div class="item-6">
+                <div class="content">
+                  <p><i class="fas fa-folder"></i></p>
+                  <p class="content-text">Process Servers</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12  py-3">
+              <div class="item-7">
+                <div class="content">
+                  <p><i class="fas fa-user-clock"></i></p>
+                  <p class="content-text">Court Bailiffs</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12  py-3">
+              <div class="item-8">
+                <div class="content">
+                  <p><i class="fas fa-gavel"></i></p>
+                  <p class="content-text">Auctioneer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12  py-3">
+              <div class="item-10">
+                <div class="content">
+                  <p><i class="fas fa-user-tie"></i></p>
+                  <p class="content-text">Debt Collector</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12  py-3">
+              <div class="item-11">
+                <div class="content">
+                  <p><i class="fas fa-folder"></i></p>
+                  <p class="content-text">Law Books</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12  py-3">
+              <div class="item-12">
+                <div class="content">
+                  <p class="content-text">PLan QUotes</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12  py-3">
+              <div class="item-13">
+                <div class="content">
+                  <p><i class="fas fa-folder-open"></i></p>
+                  <p class="content-text">Law Firms</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </main>
+  <div class="professionals">
+			<div class="container">
+				<div class="professional__content">
+					<h1>ARE YOU A LEGAL PROFESSIONAL?</h1>
+					<span>
+						Find out about how the MyLaw platform can help
+						streamline and grow your practice.
+					</span>
+					<br />
+					<button>click here to learn more</button>
+				</div>
+			</div>
+		</div>
+		<div class="footer__area">
+			<div class="container">
+				<div class="footer_borderTop"></div>
+				<div class="footer__content">
+					<div class="socila__media">
+						<span class="fab fa-facebook"></span>
+						<span class="fab fa-instagram"></span>
+						<span class="fab fa-youtube"></span>
+					</div>
+					<p>2020 &copy; MyLaw | Made by LuLu</p>
+				</div>
+			</div>
+		</div>
+  <!-----------------------------links Java Script-->
+  <script src="mainjs.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
